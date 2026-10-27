@@ -1,9 +1,8 @@
 package net.elliachu.chiseled;
 
-import net.elliachu.chiseled.block.ModBlocks;
+import net.elliachu.chiseled.block.ChiseledBlocks;
 import net.elliachu.chiseled.item.ModCreativeModeTabs;
 import net.elliachu.chiseled.item.ModItems;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
 
@@ -41,7 +40,7 @@ public class Chiseled {
         ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
-        ModBlocks.register(modEventBus);
+        ChiseledBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);

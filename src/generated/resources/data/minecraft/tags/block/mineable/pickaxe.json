@@ -2,6 +2,9 @@
   "values": [
     "chiseled:polished_stone",
     "chiseled:polished_stone_stairs",
-    "chiseled:polished_slab"
+    "chiseled:polished_stone_slab",
+    "chiseled:stone_pillar",
+    "chiseled:cut_stone_bricks",
+    "chiseled:cracked_cut_stone_bricks"
   ]
 }

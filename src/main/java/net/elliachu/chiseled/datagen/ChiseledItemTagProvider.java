@@ -1,4 +1,4 @@
 package net.elliachu.chiseled.datagen;
 
-public class ModItemTagProvider {
+public class ChiseledItemTagProvider {
 }
