@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "group": "cracked_cut_stone_bricks",
+  "ingredient": {
+    "item": "chiseled:cut_stone_bricks"
+  },
+  "result": {
+    "count": 1,
+    "id": "chiseled:cracked_cut_stone_bricks"
+  }
+}

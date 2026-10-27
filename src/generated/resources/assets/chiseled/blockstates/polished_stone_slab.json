@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "chiseled:block/polished_stone_slab"
+    },
+    "type=double": {
+      "model": "chiseled:block/polished_stone"
+    },
+    "type=top": {
+      "model": "chiseled:block/polished_stone_slab_top"
+    }
+  }
+}
