@@ -1,5 +1,10 @@
 package net.elliachu.chiseled;
 
+import net.elliachu.chiseled.block.ModBlocks;
+import net.elliachu.chiseled.item.ModCreativeModeTabs;
+import net.elliachu.chiseled.item.ModItems;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -18,7 +23,7 @@ import net.neoforged.neoforge.event.server.ServerStartingEvent;
 @Mod(Chiseled.MOD_ID)
 public class Chiseled {
     // Define mod id in a common place for everything to reference
-    public static final String MOD_ID = "chiseledbpnf";
+    public static final String MOD_ID = "chiseled";
     // Directly reference a slf4j logger
     public static final Logger LOGGER = LogUtils.getLogger();
 
@@ -33,6 +38,11 @@ public class Chiseled {
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
+        ModCreativeModeTabs.register(modEventBus);
+
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
@@ -45,7 +55,9 @@ public class Chiseled {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
 
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
