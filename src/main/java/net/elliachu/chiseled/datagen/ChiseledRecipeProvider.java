@@ -3,10 +3,7 @@ package net.elliachu.chiseled.datagen;
 import net.elliachu.chiseled.block.ChiseledBlocks;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
-import net.minecraft.data.recipes.RecipeCategory;
-import net.minecraft.data.recipes.RecipeOutput;
-import net.minecraft.data.recipes.RecipeProvider;
-import net.minecraft.data.recipes.ShapedRecipeBuilder;
+import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.ItemLike;
@@ -24,24 +21,31 @@ public class ChiseledRecipeProvider extends RecipeProvider implements ICondition
     @Override
     protected void buildRecipes(RecipeOutput recipeOutput) {
 
-        //standard recipe
+        //bricks
         brickRecipes(recipeOutput, ChiseledBlocks.POLISHED_STONE, Items.STONE, Items.STONE);
         stonecuttingRecipes(recipeOutput, Items.STONE_BRICKS, ChiseledBlocks.POLISHED_STONE);
+        //cut bricks
+        cutBricksRecipes(recipeOutput, ChiseledBlocks.CUT_STONE_BRICKS, ChiseledBlocks.POLISHED_STONE_SLAB, Items.STONE, ChiseledBlocks.POLISHED_STONE);
         //stairs
         stairRecipes(recipeOutput, ChiseledBlocks.POLISHED_STONE_STAIRS, ChiseledBlocks.POLISHED_STONE, Items.STONE, ChiseledBlocks.POLISHED_STONE);
         stonecuttingRecipes(recipeOutput, Items.STONE_BRICK_STAIRS, ChiseledBlocks.POLISHED_STONE);
+        stairRecipes(recipeOutput, ChiseledBlocks.CUT_STONE_BRICK_STAIRS, ChiseledBlocks.CUT_STONE_BRICKS, Items.STONE, ChiseledBlocks.POLISHED_STONE, ChiseledBlocks.CUT_STONE_BRICKS);
         //slab
         slabRecipes(recipeOutput, ChiseledBlocks.POLISHED_STONE_SLAB, ChiseledBlocks.POLISHED_STONE, Items.STONE, ChiseledBlocks.POLISHED_STONE);
         stonecuttingRecipes(2, recipeOutput, Items.STONE_BRICK_SLAB, ChiseledBlocks.POLISHED_STONE);
+        slabRecipes(recipeOutput, ChiseledBlocks.CUT_STONE_BRICK_SLAB, ChiseledBlocks.CUT_STONE_BRICKS, Items.STONE, ChiseledBlocks.POLISHED_STONE, ChiseledBlocks.CUT_STONE_BRICKS);
         //wall
         wallRecipes(recipeOutput, ChiseledBlocks.POLISHED_STONE_WALL, ChiseledBlocks.POLISHED_STONE, Items.STONE, ChiseledBlocks.POLISHED_STONE);
         stonecuttingRecipes(recipeOutput, Items.STONE_BRICK_WALL, ChiseledBlocks.POLISHED_STONE);
         //pillar
         pillarRecipes(recipeOutput, ChiseledBlocks.STONE_PILLAR, ChiseledBlocks.POLISHED_STONE, Items.STONE, ChiseledBlocks.POLISHED_STONE);
-        //cut bricks
-        cutBricksRecipes(recipeOutput, ChiseledBlocks.CUT_STONE_BRICKS, ChiseledBlocks.POLISHED_STONE_SLAB, Items.STONE, ChiseledBlocks.POLISHED_STONE);
         //cracked bricks
         crackingRecipe(recipeOutput, ChiseledBlocks.CUT_STONE_BRICKS, ChiseledBlocks.CRACKED_CUT_STONE_BRICKS);
+        //mossy blocks
+        mossyRecipes(recipeOutput, ChiseledBlocks.MOSSY_CUT_STONE_BRICKS, ChiseledBlocks.CUT_STONE_BRICKS);
+        stairRecipes(recipeOutput, ChiseledBlocks.MOSSY_CUT_STONE_BRICK_STAIRS, ChiseledBlocks.MOSSY_CUT_STONE_BRICKS, ChiseledBlocks.MOSSY_CUT_STONE_BRICKS);
+        slabRecipes(recipeOutput, ChiseledBlocks.MOSSY_CUT_STONE_BRICK_SLAB, ChiseledBlocks.MOSSY_CUT_STONE_BRICKS, ChiseledBlocks.MOSSY_CUT_STONE_BRICKS);
+
 
 
         //S I N G U L A R  S T O N E  W A L L
@@ -104,5 +108,18 @@ public class ChiseledRecipeProvider extends RecipeProvider implements ICondition
 
     protected static void crackingRecipe(RecipeOutput recipeOutput, ItemLike input, ItemLike output) {
         oreSmelting(recipeOutput, List.of(input), RecipeCategory.BUILDING_BLOCKS, output, 0.1f, 200,getItemName(output));
+    }
+
+    protected static void mossyRecipes(RecipeOutput recipeOutput, ItemLike craftingOutput, ItemLike craftingInput) {
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, craftingOutput)
+                .requires(craftingInput)
+                .requires(Items.MOSS_BLOCK)
+                .unlockedBy(getHasName(craftingInput), has(craftingInput))
+                .save(recipeOutput, getItemName(craftingOutput)+"_from_moss");
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, craftingOutput)
+                .requires(craftingInput)
+                .requires(Items.VINE)
+                .unlockedBy(getHasName(craftingInput), has(craftingInput))
+                .save(recipeOutput, getItemName(craftingOutput)+"_from_vine");
     }
 }

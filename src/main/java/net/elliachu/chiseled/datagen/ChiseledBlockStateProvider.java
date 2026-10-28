@@ -18,18 +18,24 @@ public class ChiseledBlockStateProvider extends BlockStateProvider {
     protected void registerStatesAndModels() {
         //bricks
         blockWithItem(ChiseledBlocks.POLISHED_STONE);
+        //cut bricks
+        blockWithItem(ChiseledBlocks.CUT_STONE_BRICKS);
         //stairs
         stairsBlock(ChiseledBlocks.POLISHED_STONE_STAIRS, ChiseledBlocks.POLISHED_STONE);
+        stairsBlock(ChiseledBlocks.CUT_STONE_BRICK_STAIRS, ChiseledBlocks.CUT_STONE_BRICKS);
         //slabs
         slabBlock(ChiseledBlocks.POLISHED_STONE_SLAB, ChiseledBlocks.POLISHED_STONE);
+        slabBlock(ChiseledBlocks.CUT_STONE_BRICK_SLAB, ChiseledBlocks.CUT_STONE_BRICKS);
         //walls
         wallBlock(ChiseledBlocks.POLISHED_STONE_WALL.get(),blockTexture(ChiseledBlocks.POLISHED_STONE.get()));
         //pillars
         rotatedPillarBlock(ChiseledBlocks.STONE_PILLAR);
-        //cut bricks
-        blockWithItem(ChiseledBlocks.CUT_STONE_BRICKS);
         //cracked bricks
         blockWithItem(ChiseledBlocks.CRACKED_CUT_STONE_BRICKS);
+        //mossy bricks
+        blockWithItem(ChiseledBlocks.MOSSY_CUT_STONE_BRICKS);
+        stairsBlock(ChiseledBlocks.MOSSY_CUT_STONE_BRICK_STAIRS, ChiseledBlocks.MOSSY_CUT_STONE_BRICKS);
+        slabBlock(ChiseledBlocks.MOSSY_CUT_STONE_BRICK_SLAB, ChiseledBlocks.MOSSY_CUT_STONE_BRICKS);
 
         //S I N G U L A R  S T O N E  W A L L
         wallBlock(ChiseledBlocks.STONE_WALL.get(),blockTexture(Blocks.STONE));

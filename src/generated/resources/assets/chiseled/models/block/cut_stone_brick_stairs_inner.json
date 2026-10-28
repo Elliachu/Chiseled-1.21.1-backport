@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "chiseled:block/cut_stone_bricks",
+    "side": "chiseled:block/cut_stone_bricks",
+    "top": "chiseled:block/cut_stone_bricks"
+  }
+}
