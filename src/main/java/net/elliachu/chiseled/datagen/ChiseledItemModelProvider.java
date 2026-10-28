@@ -19,6 +19,8 @@ public class ChiseledItemModelProvider extends ItemModelProvider {
     protected void registerModels() {
         //add new walls
         wallItem(ChiseledBlocks.POLISHED_STONE_WALL, ChiseledBlocks.POLISHED_STONE);
+        wallItem(ChiseledBlocks.STONE_TILE_WALL, ChiseledBlocks.STONE_TILES);
+        wallItem(ChiseledBlocks.MOSSY_STONE_TILE_WALL, ChiseledBlocks.MOSSY_STONE_TILES);
 
         //S I N G U L A R  S T O N E  W A L L (vanilla walls)
         wallItem(ChiseledBlocks.STONE_WALL, "block/stone");

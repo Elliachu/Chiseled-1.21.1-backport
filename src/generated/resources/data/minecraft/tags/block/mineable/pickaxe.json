@@ -1,15 +1,22 @@
 {
   "values": [
     "chiseled:polished_stone",
+    "chiseled:stone_tiles",
     "chiseled:cut_stone_bricks",
     "chiseled:polished_stone_stairs",
     "chiseled:cut_stone_brick_stairs",
+    "chiseled:stone_tile_stairs",
     "chiseled:polished_stone_slab",
     "chiseled:cut_stone_brick_slab",
+    "chiseled:stone_tile_slab",
     "chiseled:stone_pillar",
     "chiseled:cracked_cut_stone_bricks",
+    "chiseled:cracked_stone_tiles",
     "chiseled:mossy_cut_stone_bricks",
     "chiseled:mossy_cut_stone_brick_stairs",
-    "chiseled:mossy_cut_stone_brick_slab"
+    "chiseled:mossy_cut_stone_brick_slab",
+    "chiseled:mossy_stone_tiles",
+    "chiseled:mossy_stone_tile_stairs",
+    "chiseled:mossy_stone_tile_slab"
   ]
 }

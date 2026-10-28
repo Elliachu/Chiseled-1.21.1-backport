@@ -18,24 +18,33 @@ public class ChiseledBlockStateProvider extends BlockStateProvider {
     protected void registerStatesAndModels() {
         //bricks
         blockWithItem(ChiseledBlocks.POLISHED_STONE);
+        blockWithItem(ChiseledBlocks.STONE_TILES);
         //cut bricks
         blockWithItem(ChiseledBlocks.CUT_STONE_BRICKS);
         //stairs
         stairsBlock(ChiseledBlocks.POLISHED_STONE_STAIRS, ChiseledBlocks.POLISHED_STONE);
         stairsBlock(ChiseledBlocks.CUT_STONE_BRICK_STAIRS, ChiseledBlocks.CUT_STONE_BRICKS);
+        stairsBlock(ChiseledBlocks.STONE_TILE_STAIRS, ChiseledBlocks.STONE_TILES);
         //slabs
         slabBlock(ChiseledBlocks.POLISHED_STONE_SLAB, ChiseledBlocks.POLISHED_STONE);
         slabBlock(ChiseledBlocks.CUT_STONE_BRICK_SLAB, ChiseledBlocks.CUT_STONE_BRICKS);
+        slabBlock(ChiseledBlocks.STONE_TILE_SLAB, ChiseledBlocks.STONE_TILES);
         //walls
         wallBlock(ChiseledBlocks.POLISHED_STONE_WALL.get(),blockTexture(ChiseledBlocks.POLISHED_STONE.get()));
+        wallBlock(ChiseledBlocks.STONE_TILE_WALL.get(),blockTexture(ChiseledBlocks.STONE_TILES.get()));
         //pillars
         rotatedPillarBlock(ChiseledBlocks.STONE_PILLAR);
         //cracked bricks
         blockWithItem(ChiseledBlocks.CRACKED_CUT_STONE_BRICKS);
+        blockWithItem(ChiseledBlocks.CRACKED_STONE_TILES);
         //mossy bricks
         blockWithItem(ChiseledBlocks.MOSSY_CUT_STONE_BRICKS);
         stairsBlock(ChiseledBlocks.MOSSY_CUT_STONE_BRICK_STAIRS, ChiseledBlocks.MOSSY_CUT_STONE_BRICKS);
         slabBlock(ChiseledBlocks.MOSSY_CUT_STONE_BRICK_SLAB, ChiseledBlocks.MOSSY_CUT_STONE_BRICKS);
+        blockWithItem(ChiseledBlocks.MOSSY_STONE_TILES);
+        stairsBlock(ChiseledBlocks.MOSSY_STONE_TILE_STAIRS, ChiseledBlocks.MOSSY_STONE_TILES);
+        slabBlock(ChiseledBlocks.MOSSY_STONE_TILE_SLAB, ChiseledBlocks.MOSSY_STONE_TILES);
+        wallBlock(ChiseledBlocks.MOSSY_STONE_TILE_WALL.get(),blockTexture(ChiseledBlocks.MOSSY_STONE_TILES.get()));
 
         //S I N G U L A R  S T O N E  W A L L
         wallBlock(ChiseledBlocks.STONE_WALL.get(),blockTexture(Blocks.STONE));

@@ -24,27 +24,36 @@ public class ChiseledRecipeProvider extends RecipeProvider implements ICondition
         //bricks
         brickRecipes(recipeOutput, ChiseledBlocks.POLISHED_STONE, Items.STONE, Items.STONE);
         stonecuttingRecipes(recipeOutput, Items.STONE_BRICKS, ChiseledBlocks.POLISHED_STONE);
+        brickRecipes(recipeOutput, ChiseledBlocks.STONE_TILES, Items.STONE_BRICKS, Items.STONE, ChiseledBlocks.POLISHED_STONE, Items.STONE_BRICKS);
         //cut bricks
         cutBricksRecipes(recipeOutput, ChiseledBlocks.CUT_STONE_BRICKS, ChiseledBlocks.POLISHED_STONE_SLAB, Items.STONE, ChiseledBlocks.POLISHED_STONE);
         //stairs
         stairRecipes(recipeOutput, ChiseledBlocks.POLISHED_STONE_STAIRS, ChiseledBlocks.POLISHED_STONE, Items.STONE, ChiseledBlocks.POLISHED_STONE);
         stonecuttingRecipes(recipeOutput, Items.STONE_BRICK_STAIRS, ChiseledBlocks.POLISHED_STONE);
         stairRecipes(recipeOutput, ChiseledBlocks.CUT_STONE_BRICK_STAIRS, ChiseledBlocks.CUT_STONE_BRICKS, Items.STONE, ChiseledBlocks.POLISHED_STONE, ChiseledBlocks.CUT_STONE_BRICKS);
+        stairRecipes(recipeOutput, ChiseledBlocks.STONE_TILE_STAIRS, ChiseledBlocks.STONE_TILES, Items.STONE, ChiseledBlocks.POLISHED_STONE, Items.STONE_BRICKS, ChiseledBlocks.STONE_TILES);
         //slab
         slabRecipes(recipeOutput, ChiseledBlocks.POLISHED_STONE_SLAB, ChiseledBlocks.POLISHED_STONE, Items.STONE, ChiseledBlocks.POLISHED_STONE);
         stonecuttingRecipes(2, recipeOutput, Items.STONE_BRICK_SLAB, ChiseledBlocks.POLISHED_STONE);
         slabRecipes(recipeOutput, ChiseledBlocks.CUT_STONE_BRICK_SLAB, ChiseledBlocks.CUT_STONE_BRICKS, Items.STONE, ChiseledBlocks.POLISHED_STONE, ChiseledBlocks.CUT_STONE_BRICKS);
+        slabRecipes(recipeOutput, ChiseledBlocks.STONE_TILE_SLAB, ChiseledBlocks.STONE_TILES, Items.STONE, ChiseledBlocks.POLISHED_STONE, Items.STONE_BRICKS, ChiseledBlocks.STONE_TILES);
         //wall
         wallRecipes(recipeOutput, ChiseledBlocks.POLISHED_STONE_WALL, ChiseledBlocks.POLISHED_STONE, Items.STONE, ChiseledBlocks.POLISHED_STONE);
         stonecuttingRecipes(recipeOutput, Items.STONE_BRICK_WALL, ChiseledBlocks.POLISHED_STONE);
+        wallRecipes(recipeOutput, ChiseledBlocks.STONE_TILE_WALL, ChiseledBlocks.STONE_TILES, Items.STONE, ChiseledBlocks.POLISHED_STONE, Items.STONE_BRICKS, ChiseledBlocks.STONE_TILES);
         //pillar
         pillarRecipes(recipeOutput, ChiseledBlocks.STONE_PILLAR, ChiseledBlocks.POLISHED_STONE, Items.STONE, ChiseledBlocks.POLISHED_STONE);
         //cracked bricks
         crackingRecipe(recipeOutput, ChiseledBlocks.CUT_STONE_BRICKS, ChiseledBlocks.CRACKED_CUT_STONE_BRICKS);
+        crackingRecipe(recipeOutput, ChiseledBlocks.STONE_TILES, ChiseledBlocks.CRACKED_STONE_TILES);
         //mossy blocks
         mossyRecipes(recipeOutput, ChiseledBlocks.MOSSY_CUT_STONE_BRICKS, ChiseledBlocks.CUT_STONE_BRICKS);
         stairRecipes(recipeOutput, ChiseledBlocks.MOSSY_CUT_STONE_BRICK_STAIRS, ChiseledBlocks.MOSSY_CUT_STONE_BRICKS, ChiseledBlocks.MOSSY_CUT_STONE_BRICKS);
         slabRecipes(recipeOutput, ChiseledBlocks.MOSSY_CUT_STONE_BRICK_SLAB, ChiseledBlocks.MOSSY_CUT_STONE_BRICKS, ChiseledBlocks.MOSSY_CUT_STONE_BRICKS);
+        mossyRecipes(recipeOutput, ChiseledBlocks.MOSSY_STONE_TILES, ChiseledBlocks.STONE_TILES);
+        stairRecipes(recipeOutput, ChiseledBlocks.MOSSY_STONE_TILE_STAIRS, ChiseledBlocks.MOSSY_STONE_TILES, ChiseledBlocks.MOSSY_STONE_TILES);
+        slabRecipes(recipeOutput, ChiseledBlocks.MOSSY_STONE_TILE_SLAB, ChiseledBlocks.MOSSY_STONE_TILES, ChiseledBlocks.MOSSY_STONE_TILES);
+        wallRecipes(recipeOutput, ChiseledBlocks.MOSSY_STONE_TILE_WALL, ChiseledBlocks.MOSSY_STONE_TILES, ChiseledBlocks.MOSSY_STONE_TILES);
 
 
 

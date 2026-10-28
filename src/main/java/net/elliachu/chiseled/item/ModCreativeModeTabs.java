@@ -35,6 +35,15 @@ public class ModCreativeModeTabs {
                         output.accept(ChiseledBlocks.MOSSY_CUT_STONE_BRICKS);
                         output.accept(ChiseledBlocks.MOSSY_CUT_STONE_BRICK_STAIRS);
                         output.accept(ChiseledBlocks.MOSSY_CUT_STONE_BRICK_SLAB);
+                        output.accept(ChiseledBlocks.STONE_TILES);
+                        output.accept(ChiseledBlocks.CRACKED_STONE_TILES);
+                        output.accept(ChiseledBlocks.STONE_TILE_STAIRS);
+                        output.accept(ChiseledBlocks.STONE_TILE_SLAB);
+                        output.accept(ChiseledBlocks.STONE_TILE_WALL);
+                        output.accept(ChiseledBlocks.MOSSY_STONE_TILES);
+                        output.accept(ChiseledBlocks.MOSSY_STONE_TILE_STAIRS);
+                        output.accept(ChiseledBlocks.MOSSY_STONE_TILE_SLAB);
+                        output.accept(ChiseledBlocks.MOSSY_STONE_TILE_WALL);
                     }).build());
 
 

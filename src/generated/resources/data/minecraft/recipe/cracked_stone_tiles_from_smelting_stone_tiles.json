@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "group": "cracked_stone_tiles",
+  "ingredient": {
+    "item": "chiseled:stone_tiles"
+  },
+  "result": {
+    "count": 1,
+    "id": "chiseled:cracked_stone_tiles"
+  }
+}
