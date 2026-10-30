@@ -32,8 +32,6 @@ public class ChiseledBlockStateProvider extends BlockStateProvider {
         //walls
         wallBlock(ChiseledBlocks.POLISHED_STONE_WALL.get(),blockTexture(ChiseledBlocks.POLISHED_STONE.get()));
         wallBlock(ChiseledBlocks.STONE_TILE_WALL.get(),blockTexture(ChiseledBlocks.STONE_TILES.get()));
-        //pillars
-        rotatedPillarBlock(ChiseledBlocks.STONE_PILLAR);
         //cracked bricks
         blockWithItem(ChiseledBlocks.CRACKED_CUT_STONE_BRICKS);
         blockWithItem(ChiseledBlocks.CRACKED_STONE_TILES);

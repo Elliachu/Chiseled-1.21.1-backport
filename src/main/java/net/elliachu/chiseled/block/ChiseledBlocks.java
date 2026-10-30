@@ -45,9 +45,6 @@ public class ChiseledBlocks {
             () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BRICK_WALL)));
     public static final DeferredBlock<WallBlock> STONE_TILE_WALL = registerBlock("stone_tile_wall",
             () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BRICK_WALL)));
-    //pillars
-    public static final DeferredBlock<RotatedPillarBlock> STONE_PILLAR = registerBlock("stone_pillar",
-            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BRICKS)));
     //cracked bricks
     public static final DeferredBlock<Block> CRACKED_CUT_STONE_BRICKS = registerBlock("cracked_cut_stone_bricks",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BRICKS)));

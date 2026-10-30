@@ -35,8 +35,6 @@ public class ChiseledBlockLootTableProvider extends BlockLootSubProvider {
         //walls
         dropSelf(ChiseledBlocks.POLISHED_STONE_WALL.get());
         dropSelf(ChiseledBlocks.STONE_TILE_WALL.get());
-        //pillars
-        dropSelf(ChiseledBlocks.STONE_PILLAR.get());
         //cracked bricks
         dropSelf(ChiseledBlocks.CRACKED_CUT_STONE_BRICKS.get());
         dropSelf(ChiseledBlocks.CRACKED_STONE_TILES.get());

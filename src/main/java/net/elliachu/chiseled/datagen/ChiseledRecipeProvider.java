@@ -41,8 +41,6 @@ public class ChiseledRecipeProvider extends RecipeProvider implements ICondition
         wallRecipes(recipeOutput, ChiseledBlocks.POLISHED_STONE_WALL, ChiseledBlocks.POLISHED_STONE, Items.STONE, ChiseledBlocks.POLISHED_STONE);
         stonecuttingRecipes(recipeOutput, Items.STONE_BRICK_WALL, ChiseledBlocks.POLISHED_STONE);
         wallRecipes(recipeOutput, ChiseledBlocks.STONE_TILE_WALL, ChiseledBlocks.STONE_TILES, Items.STONE, ChiseledBlocks.POLISHED_STONE, Items.STONE_BRICKS, ChiseledBlocks.STONE_TILES);
-        //pillar
-        pillarRecipes(recipeOutput, ChiseledBlocks.STONE_PILLAR, ChiseledBlocks.POLISHED_STONE, Items.STONE, ChiseledBlocks.POLISHED_STONE);
         //cracked bricks
         crackingRecipe(recipeOutput, ChiseledBlocks.CUT_STONE_BRICKS, ChiseledBlocks.CRACKED_CUT_STONE_BRICKS);
         crackingRecipe(recipeOutput, ChiseledBlocks.STONE_TILES, ChiseledBlocks.CRACKED_STONE_TILES);

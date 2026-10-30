@@ -32,8 +32,6 @@ public class ChiseledBlockTagProvider extends BlockTagsProvider {
                 .add(ChiseledBlocks.POLISHED_STONE_SLAB.get())
                 .add(ChiseledBlocks.CUT_STONE_BRICK_SLAB.get())
                 .add(ChiseledBlocks.STONE_TILE_SLAB.get())
-                //pillar
-                .add(ChiseledBlocks.STONE_PILLAR.get())
                 //cracked bricks
                 .add(ChiseledBlocks.CRACKED_CUT_STONE_BRICKS.get())
                 .add(ChiseledBlocks.CRACKED_STONE_TILES.get())
