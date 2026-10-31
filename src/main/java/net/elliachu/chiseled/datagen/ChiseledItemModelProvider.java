@@ -24,6 +24,7 @@ public class ChiseledItemModelProvider extends ItemModelProvider {
 
         //S I N G U L A R  S T O N E  W A L L (vanilla walls)
         wallItem(ChiseledBlocks.STONE_WALL, "block/stone");
+        wallItem(ChiseledBlocks.POLISHED_GRANITE_WALL, "block/polished_granite");
     }
 
     public void wallItem(DeferredBlock<?> block, DeferredBlock<Block> baseBlock) {

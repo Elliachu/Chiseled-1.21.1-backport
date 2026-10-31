@@ -43,6 +43,8 @@ public class ModCreativeModeTabs {
                         output.accept(ChiseledBlocks.MOSSY_STONE_TILE_STAIRS);
                         output.accept(ChiseledBlocks.MOSSY_STONE_TILE_SLAB);
                         output.accept(ChiseledBlocks.MOSSY_STONE_TILE_WALL);
+                        output.accept(ChiseledBlocks.POLISHED_GRANITE_WALL);
+                        output.accept(ChiseledBlocks.POLISHED_GRANITE_BRICKS);
                     }).build());
 
 

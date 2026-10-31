@@ -22,6 +22,7 @@ public class ChiseledBlockTagProvider extends BlockTagsProvider {
                 //bricks
                 .add(ChiseledBlocks.POLISHED_STONE.get())
                 .add(ChiseledBlocks.STONE_TILES.get())
+                .add(ChiseledBlocks.POLISHED_GRANITE_BRICKS.get())
                 //cut bricks
                 .add(ChiseledBlocks.CUT_STONE_BRICKS.get())
                 //stairs
@@ -50,6 +51,7 @@ public class ChiseledBlockTagProvider extends BlockTagsProvider {
                 .add(ChiseledBlocks.POLISHED_STONE_WALL.get())
 
                 //S I N G U L A R  S T O N E  W A L L
-                .add(ChiseledBlocks.STONE_WALL.get());
+                .add(ChiseledBlocks.STONE_WALL.get())
+                .add(ChiseledBlocks.POLISHED_GRANITE_WALL.get());
     }
 }

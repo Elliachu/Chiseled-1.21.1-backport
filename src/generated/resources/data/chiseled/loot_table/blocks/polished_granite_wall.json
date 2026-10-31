@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "chiseled:stone_pillar"
+          "name": "chiseled:polished_granite_wall"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "chiseled:blocks/stone_pillar"
+  "random_sequence": "chiseled:blocks/polished_granite_wall"
 }

@@ -19,6 +19,7 @@ public class ChiseledBlockLootTableProvider extends BlockLootSubProvider {
         //bricks
         dropSelf(ChiseledBlocks.POLISHED_STONE.get());
         dropSelf(ChiseledBlocks.STONE_TILES.get());
+        dropSelf(ChiseledBlocks.POLISHED_GRANITE_BRICKS.get());
         //cut bricks
         dropSelf(ChiseledBlocks.CUT_STONE_BRICKS.get());
         //stairs
@@ -51,6 +52,7 @@ public class ChiseledBlockLootTableProvider extends BlockLootSubProvider {
 
         //S I N G U L A R  S T O N E  W A L L
         dropSelf(ChiseledBlocks.STONE_WALL.get());
+        dropSelf(ChiseledBlocks.POLISHED_GRANITE_WALL.get());
     }
 
     @Override

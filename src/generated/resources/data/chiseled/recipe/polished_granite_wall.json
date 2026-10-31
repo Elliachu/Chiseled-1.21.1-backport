@@ -3,16 +3,15 @@
   "category": "building",
   "key": {
     "#": {
-      "item": "chiseled:polished_stone"
+      "item": "minecraft:polished_granite"
     }
   },
   "pattern": [
-    "#  ",
-    "#  ",
-    "   "
+    "###",
+    "###"
   ],
   "result": {
-    "count": 2,
-    "id": "chiseled:stone_pillar"
+    "count": 6,
+    "id": "chiseled:polished_granite_wall"
   }
 }

@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_polished_stone": {
+    "has_granite": {
       "conditions": {
         "items": [
           {
-            "items": "chiseled:polished_stone"
+            "items": "minecraft:granite"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "chiseled:stone_pillar"
+        "recipe": "minecraft:polished_granite_wall_from_granite_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_polished_stone"
+      "has_granite"
     ]
   ],
   "rewards": {
     "recipes": [
-      "chiseled:stone_pillar"
+      "minecraft:polished_granite_wall_from_granite_stonecutting"
     ]
   }
 }

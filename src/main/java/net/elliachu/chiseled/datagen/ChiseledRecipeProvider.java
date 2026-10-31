@@ -25,6 +25,7 @@ public class ChiseledRecipeProvider extends RecipeProvider implements ICondition
         brickRecipes(recipeOutput, ChiseledBlocks.POLISHED_STONE, Items.STONE, Items.STONE);
         stonecuttingRecipes(recipeOutput, Items.STONE_BRICKS, ChiseledBlocks.POLISHED_STONE);
         brickRecipes(recipeOutput, ChiseledBlocks.STONE_TILES, Items.STONE_BRICKS, Items.STONE, ChiseledBlocks.POLISHED_STONE, Items.STONE_BRICKS);
+        brickRecipes(recipeOutput, ChiseledBlocks.POLISHED_GRANITE_BRICKS, Items.POLISHED_GRANITE, Items.GRANITE, Items.POLISHED_GRANITE);
         //cut bricks
         cutBricksRecipes(recipeOutput, ChiseledBlocks.CUT_STONE_BRICKS, ChiseledBlocks.POLISHED_STONE_SLAB, Items.STONE, ChiseledBlocks.POLISHED_STONE);
         //stairs
@@ -57,6 +58,7 @@ public class ChiseledRecipeProvider extends RecipeProvider implements ICondition
 
         //S I N G U L A R  S T O N E  W A L L
         wallRecipes(recipeOutput, ChiseledBlocks.STONE_WALL, Blocks.STONE, Items.STONE);
+        wallRecipes(recipeOutput, ChiseledBlocks.POLISHED_GRANITE_WALL, Blocks.POLISHED_GRANITE, Items.GRANITE, Items.POLISHED_GRANITE);
     }
 
     protected static void stonecuttingRecipes(RecipeOutput recipeOutput, ItemLike result, ItemLike... material) {

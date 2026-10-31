@@ -20,6 +20,8 @@ public class ChiseledBlocks {
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BRICKS)));
     public static final DeferredBlock<Block> STONE_TILES = registerBlock("stone_tiles",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BRICKS)));
+    public static final DeferredBlock<Block> POLISHED_GRANITE_BRICKS = registerBlock("polished_granite_bricks",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_GRANITE)));
     //cut bricks
     public static final DeferredBlock<Block> CUT_STONE_BRICKS = registerBlock("cut_stone_bricks",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BRICKS)));
@@ -72,6 +74,8 @@ public class ChiseledBlocks {
     //S I N G U L A R  S T O N E  W A L L
     public static final DeferredBlock<WallBlock> STONE_WALL = registerBlock("stone_wall",
             () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BRICK_WALL)));
+    public static final DeferredBlock<WallBlock> POLISHED_GRANITE_WALL = registerBlock("polished_granite_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.POLISHED_GRANITE)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

@@ -19,6 +19,7 @@ public class ChiseledBlockStateProvider extends BlockStateProvider {
         //bricks
         blockWithItem(ChiseledBlocks.POLISHED_STONE);
         blockWithItem(ChiseledBlocks.STONE_TILES);
+        blockWithItem(ChiseledBlocks.POLISHED_GRANITE_BRICKS);
         //cut bricks
         blockWithItem(ChiseledBlocks.CUT_STONE_BRICKS);
         //stairs
@@ -46,6 +47,7 @@ public class ChiseledBlockStateProvider extends BlockStateProvider {
 
         //S I N G U L A R  S T O N E  W A L L
         wallBlock(ChiseledBlocks.STONE_WALL.get(),blockTexture(Blocks.STONE));
+        wallBlock(ChiseledBlocks.POLISHED_GRANITE_WALL.get(),blockTexture(Blocks.POLISHED_GRANITE));
     }
 
     private void blockWithItem(DeferredBlock<?> deferredBlock) {
